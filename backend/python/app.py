@@ -1,7 +1,9 @@
-from flask import Flask
+from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-@app.route("/")
-def hello_world():
-    return "<p> Hello world! </p>"
+
+@app.route("/api")
+def route_api():
+    dict = { "error": "not implemented" }
+    return jsonify(dict), 501
