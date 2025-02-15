@@ -3,3 +3,4 @@ flask-cors
 opencv-python
 pillow
 requests
+opencv-python
