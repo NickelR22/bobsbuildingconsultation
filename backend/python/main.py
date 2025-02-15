@@ -6,9 +6,9 @@ from detector import detect_people
 
 app = Flask(__name__)
 
-# Directory for saving screenshots
-SCREENSHOT_PATH = "static/screenshot.jpg"
-os.makedirs("static", exist_ok=True)  # Ensure directory exists
+STATIC_DIR = "static"
+SCREENSHOT_PATH = os.path.join(STATIC_DIR, "screenshot.jpg")
+os.makedirs(STATIC_DIR, exist_ok=True)
 
 @app.route('/detect', methods=['POST'])
 def detect():
