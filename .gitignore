@@ -138,6 +138,7 @@ backend/node/package-lock.json
 backend/python/venv/
 backend/python/__pycache__/
 backend/python/.env
+backend/python/static/
 
 # React
 frontend/node_modules/
@@ -150,3 +151,5 @@ frontend/.cache/
 *.log
 .vscode/
 .idea/
+backend/python/output.avi
+*.avi
