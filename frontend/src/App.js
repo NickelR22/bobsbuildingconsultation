@@ -95,8 +95,12 @@ function App() {
               
               </section>
               </article>
-              
-          <p>Visit our interactive museum to learn more about endangered</p>
+              <section id = "museum-visit">
+                <p>Visit our interactive museum to learn some more about endangered species:</p>
+                <p><a href = "/frontend/public/museum.html">
+                  <button class = "imbutton">Interactive Museum</button></a>
+                  </p>
+            </section>
           <footer className="footer">
             &copy; <script src="about.js"></script> Simba's Surveillance. All rights reserved.
         </footer>

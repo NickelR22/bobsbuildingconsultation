@@ -157,12 +157,12 @@ nav {
 
 .searchBox {
   display: flex;
-  max-width: 230px;
+  width: 25rem;
   right: 35px;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  background: #2f3640;
+  background: #ffffff;
   border-radius: 50px;
   position: relative;
 }
@@ -318,7 +318,32 @@ h2
   font-size:30px;
 }
 
+#museum-visit
+{
+  background-color: #f0ecec;
+}
+#museum-visit p
+{
+  font-size:35px;
+  padding:3rem;
+  margin-bottom:-2rem;
+}
 
+
+.imbutton
+{
+  border-color: #dd5426;
+  font-size:30px;
+  padding:1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top:-5rem;
+}
+
+.imbutton:hover
+{
+  background-color: rgb(224, 224, 224);
+  color: black;
+}
 #rectangle
 {
   width:1rem;
