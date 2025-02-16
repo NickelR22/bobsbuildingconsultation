@@ -153,3 +153,5 @@ frontend/.cache/
 .idea/
 backend/python/output.avi
 *.avi
+
+backend/python/*.jpg
