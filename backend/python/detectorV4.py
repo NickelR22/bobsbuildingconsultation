@@ -57,6 +57,7 @@ while True:
             print("sent img to flask backend")
         else:
             print("No human detected.")
+        os.remove(image_path)
     n += 1
 cap.release()
 cv2.destroyAllWindows()
