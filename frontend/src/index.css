@@ -132,17 +132,21 @@ nav {
   background-color: rgb(223,56,2);
   z-index: 1;
 }
-
+.nav-links button {  
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .nav-links a {
   color: white;
   text-decoration: none;
   margin: 0 15px;
   font-size: 1.3rem;
+  
 }
 
 .nav-links a:hover {
   color: rgb(194, 192, 192);
   text-decoration: underline;
+  
 }
 
 .searchBox {
