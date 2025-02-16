@@ -48,7 +48,7 @@ function App() {
                   </tr>
                   <tr>
                     <td></td>
-                    <td><a href="#">Link 2=</a></td>
+                    <td><a href="#">Link 2</a></td>
                     
                   </tr>
                 </table>
