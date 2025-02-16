@@ -1,6 +1,11 @@
 flask
 flask-cors
-opencv-python
+opencv-contrib-python
+numpy
 pillow
 requests
-opencv-python
+transformers
+torch
+huggingface_hub
+ultralytics
+supervision
