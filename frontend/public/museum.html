@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="museum.css">
 </head>
 <body>
     <nav>
@@ -45,15 +45,86 @@
           </button>
       </div>
       </nav>
+    <section class="hero">
+        <h1>Interactive Museum</h1>       
+    </section>
 
+    <section class="values">
+        <h2>Savanna Facts</h2>
+        <div class="values-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">WILDLIFE</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">FACT 1</p>
+                        <p>The Savanna has the largest land animal (elepahnts) and the tallest land animal (giraffe).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">HERBIVORE</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">FACT 2</p>
+                        <p>The Savanna has the highest biodiversity of herbivore animals of any biome.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">NATIONAL PARK</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">FACT 3</p>
+                        <p>Serengeti National Park in Tanzania is home to large populations of wildebeest and zebra, as well as lions, leopards, elephants, hippos, and gazelles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">TRANSITIONAL BIOME</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">FACT 4</p>
+                        <p>Savannas are a transitional biome, somewhere in between a forest and a desert. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="image-showcase">
+        <h1>Surveillance reduces the poaching of elephants by:</h1>
+        <section id="target-section">
+            <h2 id="counter">0%</h2>
+        </section>
+    </section>
+        <h1>Top 3 Endangered Species</h1>
     <main>
         <section id="container3D">
             <canvas id="myCanvas"></canvas>
         </section>
     </main>
+    <!-- Text boxes side by side -->
+        <div id="textBoxesContainer">
+            <div id="rhinoTextBox" class="model-text-box">RHINO</div>
+            <div id="elephantTextBox" class="model-text-box">ELEPHANT</div>
+            <div id="antelopeTextBox" class="model-text-box">ANTELOPE</div>
+        </div>
+
 
     <footer class="footer">
-        &copy; <script src="about.js" type="module"></script> Your Company. All rights reserved.
+        &copy; <script src="museum.js" type="module"></script> Your Company. All rights reserved.
     </footer>
 </body>
 </html>
