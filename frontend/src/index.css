@@ -133,8 +133,12 @@ nav {
   z-index: 1;
 }
 
-.nav-links button {  
+.nav-links button
+{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:25px;
+  padding:.7rem;
+  width:10rem;
 }
 
 .nav-links a {
@@ -264,24 +268,8 @@ h2
   font-size:45px;
 
 }
-.about
-{
-  padding:1rem;
-  margin-top:5rem;
-  background-color: #dedede;
-}
-.about p
-{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-left:20%;
-  margin-right:20%;
-  font-size:30px;
-  
-}
-
 .footer {
+  margin-top:4rem;
   padding: 20px;
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
@@ -299,7 +287,7 @@ h2
 }
 #table
 {
-  margin-top:-6rem;
+  margin-top:-5rem;
   background-color: rgb(247, 241, 241);
   padding:2rem;
   align-items: center;
