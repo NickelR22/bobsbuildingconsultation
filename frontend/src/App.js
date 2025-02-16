@@ -23,7 +23,7 @@ function App() {
                 <button class="btn">HOME</button></a>
 
               <a href="./museum.html">
-                <button class="btn">INTERACTIVE MUSEUM</button></a>
+                <button class="btn">MUSEUM</button></a>
               <a href="./about.html">
               <button class="btn">ABOUT</button></a>
           </div>
@@ -96,7 +96,7 @@ function App() {
               </section>
               </article>
               
-          
+          <p>Visit our interactive museum to learn more about endangered</p>
           <footer className="footer">
             &copy; <script src="about.js"></script> Simba's Surveillance. All rights reserved.
         </footer>
