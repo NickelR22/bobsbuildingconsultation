@@ -13,17 +13,12 @@ cv2.startWindowThread()
 # Open webcam video stream
 cap = cv2.VideoCapture(0)
 
-<<<<<<< Updated upstream
-CONFIDENCE_THRESHOLD = 0.4  # Adjust as needed
-SERVER_URL = "http://localhost:8080/upload-screenshot"  # Flask backend URL
-=======
 CONFIDENCE_THRESHOLD = 0.80  # Adjust as needed
 SERVER_URL = "http://localhost:8080/upload-screenshot"  # Flask backend URL
 STATIC_FOLDER = "static"
 
 if not os.path.exists(STATIC_FOLDER):
     os.makedirs(STATIC_FOLDER)
->>>>>>> Stashed changes
 
 while True:
     ret, frame = cap.read()
