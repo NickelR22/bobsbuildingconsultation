@@ -32,7 +32,7 @@ def upload_screenshot():
     timestamp = request.form["timestamp"]
 
     # Save file with a unique name
-    #filename = f"person_detected_{timestamp}.jpg"
+    filename = f"person_detected_{timestamp}.jpg"
     #file_path = os.path.join(STATIC_DIR, filename)
     #file.save(file_path)
     image = base64.b64encode(file.read()).decode('utf-8')
