@@ -13,7 +13,7 @@ function App() {
               <div className="nav-links">
                   <a href="#">HOME</a>
                   <a href="#">CONTACTS</a>
-                  <a href="#">ABOUT</a>
+                  <a href="/frontend/src/about.html">ABOUT</a>
               </div>
               <div className="nav-search">
                   <input type="text" placeholder="Search..." />
@@ -27,11 +27,8 @@ function App() {
           <article id="test-it">
               <img className="sky" src="assets/simbasmile.png" width="10%" height="auto" alt="Simba the cub smiling" />
               <p>
-                  Click Below To Track The Savanna Wildlife Camera's Live Video
+                  Track The Savanna Wildlife Camera's Live Video Below
               </p>
-              <button className="video-button" onClick={fetchDetections}>
-                  LIVE CAM FOOTAGE
-              </button>
           </article>
           <img src="/assets/line.png" width="10%" height="auto" alt="little line for separation" />
           <section className="about">
@@ -46,5 +43,5 @@ function App() {
       </div>
   );
 }
- 
+
 export default App;
