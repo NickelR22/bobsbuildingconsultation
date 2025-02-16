@@ -97,7 +97,7 @@ function App() {
               </article>
               <section id = "museum-visit">
                 <p>Visit our interactive museum to learn some more about endangered species:</p>
-                <p><a href = "/frontend/public/museum.html">
+                <p><a href = "./museum.html">
                   <button class = "imbutton">Interactive Museum</button></a>
                   </p>
             </section>

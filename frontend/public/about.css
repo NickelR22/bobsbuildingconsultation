@@ -12,42 +12,88 @@ body {
 
 /* Navigation Bar */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    width: 100%;
-    position: fixed; /* Keeps navbar at the top */
-    top: 0;
-    left: 0;
-    background-color: rgb(223,56,2);
-    z-index: 1000; /* Ensures navbar is above other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  width: 100%;
+  position: fixed; /* Keeps navbar at the top */
+  top: 0;
+  left: 0;
+  background-color: rgb(223,56,2);
+  z-index: 1000; /* Ensures navbar is above other elements */
 }
 
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.3rem;
-}
-.nav-links button
-{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:25px;
-  padding:.7rem;
-  width:10rem;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.3rem;
 }
 
 .nav-links a:hover {
-    color: rgb(194, 192, 192);
-    text-decoration: underline;
+  color: rgb(194, 192, 192);
+  text-decoration: underline;
 }
 
+.nav-search input {
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 50px;
+  border: none;
+  outline: none;
+  width: 15rem;
+}
 
 .nav-links button {  
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(223,56,2);
+  z-index: 1;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.3rem;
+}
+
+.nav-links a:hover {
+  color: rgb(194, 192, 192);
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(223,56,2);
+  z-index: 1;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.3rem;
+}
+
+.nav-links a:hover {
+  color: rgb(194, 192, 192);
+  text-decoration: underline;
+}
 /* Hero Section */
 .hero {
     padding: 120px 20px; /* Ensures content doesn't overlap navbar */
@@ -162,7 +208,6 @@ h2
   font-size:40px;
   
 }
-
 
 .btn {
     --border-color: linear-gradient(-45deg, #952500, #a32900, #952500);
