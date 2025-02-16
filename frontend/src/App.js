@@ -42,13 +42,13 @@ function App() {
                     
                   </tr>
                   <tr>
-                    <td>01:24</td>
+                    <td></td>
                     <td><a href="#">Link 1</a></td>
                     
                   </tr>
                   <tr>
-                    <td>02:21</td>
-                    <td><a href="#">Link 2</a></td>
+                    <td></td>
+                    <td><a href="#">Link 2=</a></td>
                     
                   </tr>
                 </table>
