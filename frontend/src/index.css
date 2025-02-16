@@ -44,7 +44,6 @@ nav {
 }
 
 .hero {
-  background: url('sunset.jpg');
   height: 300px;
   display: flex;
   align-items: center;
