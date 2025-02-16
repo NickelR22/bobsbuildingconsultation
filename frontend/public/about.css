@@ -45,6 +45,10 @@ nav {
     width: 15rem;
 }
 
+.nav-links button {  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
 /* Hero Section */
 .hero {
     padding: 120px 20px; /* Ensures content doesn't overlap navbar */
