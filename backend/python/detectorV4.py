@@ -30,7 +30,7 @@ while True:
     cv2.imshow('frame', frame)
     if cv2.waitKey(20) & 0xFF == ord('q'):
         break
-    if n == 5:
+    if n == 40:
         n = 0
         image_path = "{}_{}.jpg".format(base_path, datetime.datetime.now().strftime('%Y%m%d%H%M%S%f'))
         cv2.imwrite(image_path, frame)
