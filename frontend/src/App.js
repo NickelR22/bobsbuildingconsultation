@@ -1,10 +1,18 @@
 import logo from './logo.svg';
 import './index.css';
+import { useState, useEffect } from "react";
+
+
 
 function App() {
-  const fetchDetections = () => {
-      console.log("Fetching live cam footage...");
-  };
+  const [items, setItems] = useState([]);
+  useEffect(() => {
+    setTimeout(async () => {
+      await fetch("http://localhost:8080/get-detections").then(res => res.json())
+      .then(data => setItems(data || []))
+      .catch(error => console.error("Error fetching items:", error));;      
+    }, 1000);
+  });
 
   return (
       <div>
@@ -36,22 +44,26 @@ function App() {
               </p>
             <section className="table">
               <table>
+                <thead>
                   <tr>
                     <th>Time</th>
+                    
                     <th>Link</th>
                     
                   </tr>
-                  <tr>
-                    <td></td>
-                    <td><a href="#">Link 1</a></td>
-                    
+                  </thead>
+                  <tbody>
+                  {items.map((item)=>(
+
+                    <tr>
+                      <td>
+                          {item.timestamp}
+                      </td>
+                    <td><img src = {"data:image/png;base64, " + item.image}></img></td>
                   </tr>
-                  <tr>
-                    <td></td>
-                    <td><a href="#">Link 2</a></td>
-                    
-                  </tr>
-                </table>
+                ))}
+                </tbody>
+              </table>
               
               </section>
               </article>
@@ -69,7 +81,7 @@ function App() {
                   are alerted, enabling rapid response to safeguard endangered species and preserve natural ecosystems.
               </p>
           </section>
-          <footer class="footer">
+          <footer className="footer">
             &copy; <script src="about.js"></script> Simba's Surveillance. All rights reserved.
         </footer>
       </div>
