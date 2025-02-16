@@ -3,7 +3,7 @@ flask-cors
 opencv-contrib-python
 numpy
 pillow
-requests
+requestssou
 transformers
 torch
 huggingface_hub
