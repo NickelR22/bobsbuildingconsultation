@@ -1,24 +1,49 @@
 import logo from './logo.svg';
-import './App.css';
+import './index.css';
 
 function App() {
+  const fetchDetections = () => {
+      console.log("Fetching live cam footage...");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <img className="sky" src="assets/sky.png" width="100%" height="auto" alt="background sky image" />
+          <nav>
+              <div className="nav-links">
+                  <a href="#">HOME</a>
+                  <a href="#">CONTACTS</a>
+                  <a href="#">ABOUT</a>
+              </div>
+              <div className="nav-search">
+                  <input type="text" placeholder="Search..." />
+              </div>
+          </nav>
+          <header>
+              <div className="hero">
+                  <h1>Simba's Surveillance</h1>
+              </div>
+          </header>
+          <article id="test-it">
+              <img className="sky" src="assets/simbasmile.png" width="10%" height="auto" alt="Simba the cub smiling" />
+              <p>
+                  Click Below To Track The Savanna Wildlife Camera's Live Video
+              </p>
+              <button className="video-button" onClick={fetchDetections}>
+                  LIVE CAM FOOTAGE
+              </button>
+          </article>
+          <img src="/assets/line.png" width="10%" height="auto" alt="little line for separation" />
+          <section className="about">
+              <h2>What we do</h2>
+              <p>
+                  At Simba's Surveillance, we are dedicated to protecting wildlife from the growing threat of poaching.
+                  Using state-of-the-art technology, our advanced camera systems provide live footage from the African Savanna, 
+                  allowing us to detect trespassing poachers in real time. The moment suspicious activity is identified, park rangers 
+                  are alerted, enabling rapid response to safeguard endangered species and preserve natural ecosystems.
+              </p>
+          </section>
+      </div>
   );
 }
 
