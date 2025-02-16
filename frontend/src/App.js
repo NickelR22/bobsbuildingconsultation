@@ -18,7 +18,7 @@ function App() {
     
       <div>
           <nav>
-          <div class="nav-links">
+            <div class="nav-links">
               <a href="./App.js">
                 <button class="btn">HOME</button></a>
 
@@ -64,6 +64,7 @@ function App() {
           </header>
 
           <img className="simbasmile" src="assets/simbasmile.png" width="10%" height="auto" alt="Simba the cub smiling" />
+
           <article id="table">
           
                 <p>
@@ -95,20 +96,7 @@ function App() {
               </section>
               </article>
               
-          <section className="about">
-              <h2>What we do</h2>
-              <img className = "line" src="/assets/line.png" width="10%" height="auto" alt="A little line for separation" />
-              <p>
-                  At Simba's Surveillance, we are dedicated to protecting wildlife from the growing threat of poaching.
-
-                  
-              </p>
-              <p>
-                Using state-of-the-art technology, our advanced camera systems provide live footage from the African Savanna,
-                  allowing us to detect trespassing poachers in real time. The moment suspicious activity is identified, park rangers 
-                  are alerted, enabling rapid response to safeguard endangered species and preserve natural ecosystems.
-              </p>
-          </section>
+          
           <footer className="footer">
             &copy; <script src="about.js"></script> Simba's Surveillance. All rights reserved.
         </footer>
