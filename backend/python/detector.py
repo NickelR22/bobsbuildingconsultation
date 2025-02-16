@@ -14,7 +14,7 @@ cv2.startWindowThread()
 cap = cv2.VideoCapture(0)
 
 CONFIDENCE_THRESHOLD = 0.4  # Adjust as needed
-SERVER_URL = "http://localhost:5000/upload-screenshot"  # Flask backend URL
+SERVER_URL = "http://localhost:8080/upload-screenshot"  # Flask backend URL
 
 while True:
     ret, frame = cap.read()
