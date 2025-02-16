@@ -59,7 +59,7 @@ function App() {
                       <td>
                           {item.timestamp}
                       </td>
-                    <td><img src = {"data:image/png;base64, " + item.image}></img></td>
+                    <td><img height="200rem" width="350rem" src = {"data:image/png;base64, " + item.image}></img></td>
                   </tr>
                 ))}
                 </tbody>
