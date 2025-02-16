@@ -29,7 +29,7 @@ while True:
         break
 
     # Resize frame for faster detection
-    frame = cv2.resize(frame, (640, 480))
+    frame = cv2.resize(frame, (1280, 720))
     gray = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
 
     # Detect people in the frame
@@ -55,7 +55,6 @@ while True:
                 print("Screenshot uploaded successfully!")
             else:
                 print("Failed to upload screenshot:", response.text)
-
 
     for (xA, yA, xB, yB) in boxes:
         cv2.rectangle(frame, (xA, yA), (xB, yB), (0, 255, 0), 2)

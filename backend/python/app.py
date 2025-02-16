@@ -9,8 +9,18 @@ CORS(app)
 STATIC_DIR = "static"
 os.makedirs(STATIC_DIR, exist_ok=True)
 
+CLEAN_ON_START = True
+
 # Store detected images and timestamps
 detections = []
+
+if CLEAN_ON_START:
+    for fname in os.listdir(STATIC_DIR):
+        if not fname.endswith(".jpg"):
+            continue
+
+        fpath = os.path.join(STATIC_DIR, fname)
+        os.remove(fpath)
 
 @app.route('/upload-screenshot', methods=['POST'])
 def upload_screenshot():
