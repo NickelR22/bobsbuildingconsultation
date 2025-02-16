@@ -13,8 +13,17 @@ cv2.startWindowThread()
 # Open webcam video stream
 cap = cv2.VideoCapture(0)
 
+<<<<<<< Updated upstream
 CONFIDENCE_THRESHOLD = 0.4  # Adjust as needed
 SERVER_URL = "http://localhost:8080/upload-screenshot"  # Flask backend URL
+=======
+CONFIDENCE_THRESHOLD = 0.80  # Adjust as needed
+SERVER_URL = "http://localhost:8080/upload-screenshot"  # Flask backend URL
+STATIC_FOLDER = "static"
+
+if not os.path.exists(STATIC_FOLDER):
+    os.makedirs(STATIC_FOLDER)
+>>>>>>> Stashed changes
 
 while True:
     ret, frame = cap.read()
@@ -48,7 +57,7 @@ while True:
             else:
                 print("Failed to upload screenshot:", response.text)
 
-        time.sleep(3)  # Avoid taking screenshots too frequently
+        time.sleep(10)  # Avoid taking screenshots too frequently
 
     for (xA, yA, xB, yB) in boxes:
         cv2.rectangle(frame, (xA, yA), (xB, yB), (0, 255, 0), 2)
