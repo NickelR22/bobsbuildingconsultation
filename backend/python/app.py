@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS
 import os
+import base64
 
 app = Flask(__name__)
-
+CORS(app)
 # Ensure the 'static' directory exists for storing images
 STATIC_DIR = "static"
 os.makedirs(STATIC_DIR, exist_ok=True)
@@ -30,12 +32,13 @@ def upload_screenshot():
     timestamp = request.form["timestamp"]
 
     # Save file with a unique name
-    filename = f"person_detected_{timestamp}.jpg"
-    file_path = os.path.join(STATIC_DIR, filename)
-    file.save(file_path)
+    #filename = f"person_detected_{timestamp}.jpg"
+    #file_path = os.path.join(STATIC_DIR, filename)
+    #file.save(file_path)
+    image = base64.b64encode(file.read()).decode('utf-8')
 
     # Store detection info
-    detections.append({"image": filename, "timestamp": timestamp})
+    detections.append({"image": image, "timestamp": timestamp})
 
     return jsonify({
         "message": "Screenshot received",
