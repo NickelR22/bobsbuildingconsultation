@@ -22,7 +22,7 @@ function App() {
               <a href="./App.js">
                 <button class="btn">HOME</button></a>
                 <a href="./museum.html">
-                <button class="btn">INTERACTIVE MUSEUM</button></a>
+                  <button button class="btn">INTERACTIVE MUSEUM</button></a>
                 <a href="./about.html">
               <button class="btn">ABOUT</button></a>
           </div>
