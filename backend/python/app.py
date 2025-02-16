@@ -29,7 +29,7 @@ def upload_screenshot():
 
     return jsonify({
         "message": "Screenshot received",
-        "screenshot_url": f"http://localhost:5000/static/{filename}",
+        "screenshot_url": f"http://localhost:8080/static/{filename}",
         "timestamp": timestamp
     })
 
