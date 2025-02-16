@@ -17,7 +17,7 @@ function App() {
   return (
     
       <div>
-          <img className="sky" src="assets/sky.png" width="100%" height="auto" alt="background sky image" />
+          
           <nav>
           <div class="nav-links">
               <a href="./App.js">HOME</a>
@@ -28,7 +28,7 @@ function App() {
               <input type="text" placeholder="Search..." />
           </div>
         </nav>
-
+        <img className="sky" src="assets/sky.png" width="100%" height="auto" alt="background sky image" />
           <header>
               <div className="hero">
                   <h1>Simba's Surveillance</h1>
