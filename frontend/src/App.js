@@ -34,11 +34,11 @@ function App() {
               <div className="glow">
                   <h1>Simba's Surveillance</h1>
               </div>
-              <p><i>Prowl for poachers!</i></p>
+
           </header>
-          
-          <article id="table">
           <img className="simbasmile" src="assets/simbasmile.png" width="10%" height="auto" alt="Simba the cub smiling" />
+          <article id="table">
+          
                 <p>
                   Track The Savanna Wildlife Camera's Live Alerts Below
               </p>

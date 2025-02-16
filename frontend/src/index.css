@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #dedede;
+  background-color: rgb(247, 241, 241);
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -19,12 +19,12 @@ h1{
 
 header p
 {
-  margin-top:-3.5rem;
-  font-size:35px;
+
+  font-size:45px;
   font-weight:600;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color:#ffffff;
-  margin-top:3rem;
+  margin-top:1rem;
 }
 nav {
 
@@ -72,23 +72,24 @@ nav {
   color: #cecbcb;
   margin-top:-21rem;
   
-  -webkit-animation: glow .5s ease-in-out infinite alternate;
-  -moz-animation: glow .5s ease-in-out infinite alternate;
+  -webkit-animation: glow .3s ease-in-out infinite alternate;
+  -moz-animation: glow .3s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #ffffff, 0 0 60px #e63a00, 0 0 70px #e60073;
+    text-shadow: 0 0 10px #fff, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #ffffff, 0 0 60px #000000, 0 0 70px #ffffff;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #1d0c00, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000, 0 0 70px #000000, 0 0 80px #df4700;
+    text-shadow: 0 0 20px #fff, 0 0 30px #1d0c00, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000, 0 0 70px #000000, 0 0 80px #ffffff;
   }
 }
 .simbasmile
 {
 
   margin-top:3rem;
+  margin-bottom: 4rem;
   
 }
 #test-it
@@ -129,7 +130,7 @@ h2
 .about
 {
   padding:1rem;
-  margin-top:.1rem;
+  margin-top:5rem;
   background-color: #dedede;
 }
 .about p
@@ -156,12 +157,12 @@ h2
   text-align: center; 
   background-color: rgb(255, 184, 102);
   padding:1rem;
-  width: 40%; 
+  width: 50%; 
 
 }
 #table
 {
-
+  margin-top:-6rem;
   background-color: rgb(247, 241, 241);
   padding:2rem;
   align-items: center;
@@ -178,7 +179,8 @@ h2
 }
 #table p
 {
-  font-size:40px;
+  font-weight:500;
+  font-size:45px;
 }
 
 .table table tr td {
@@ -188,6 +190,7 @@ h2
 .table table tr td
 {
   margin-top:-44rem;
+  font-size:30px;
 }
 
 
