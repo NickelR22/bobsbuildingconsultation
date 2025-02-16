@@ -1,0 +1,11 @@
+Model Information:
+* title:	African Forest Elephant skull
+* source:	https://sketchfab.com/3d-models/african-forest-elephant-skull-d982240ed37d429bbcf5953f0212cf70
+* author:	University of Dundee Museum Collections (https://sketchfab.com/uod_museums)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "African Forest Elephant skull" (https://sketchfab.com/3d-models/african-forest-elephant-skull-d982240ed37d429bbcf5953f0212cf70) by University of Dundee Museum Collections (https://sketchfab.com/uod_museums) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
