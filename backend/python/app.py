@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import os
 import base64
+from datetime import datetime
 
 app = Flask(__name__)
 CORS(app)
@@ -40,10 +41,14 @@ def upload_screenshot():
     # Store detection info
     detections.append({"image": image, "timestamp": timestamp})
 
+    timestamp_obj = datetime.strptime(timestamp, "%Y%m%d-%H%M%S")
+    formatted_timestamp = timestamp_obj.strftime("%m/%d/%Y-%H:%M:%S")
+    print(formatted_timestamp)
+
     return jsonify({
         "message": "Screenshot received",
         "screenshot_url": f"http://localhost:8080/static/{filename}",
-        "timestamp": timestamp
+        "timestamp": formatted_timestamp
     })
 
 @app.route('/get-detections', methods=['GET'])
