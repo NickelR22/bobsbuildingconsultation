@@ -15,18 +15,19 @@ function App() {
   });
 
   return (
+    
       <div>
           <img className="sky" src="assets/sky.png" width="100%" height="auto" alt="background sky image" />
           <nav>
-              <div className="nav-links">
-                  <a href="#">HOME</a>
-                  <a href="#">CONTACTS</a>
-                  <a href="./about.html">ABOUT</a>
-              </div>
-              <div className="nav-search">
-                  <input type="text" placeholder="Search..." />
-              </div>
-          </nav>
+          <div class="nav-links">
+              <a href="./App.js">HOME</a>
+              <a href="#">CONTACTS</a>
+              <a href="./about.html">ABOUT</a>
+          </div>
+          <div class="nav-search">
+              <input type="text" placeholder="Search..." />
+          </div>
+        </nav>
 
           <header>
               <div className="hero">
@@ -48,7 +49,7 @@ function App() {
                   <tr>
                     <th>Time</th>
                     
-                    <th>Link</th>
+                    <th>Capture</th>
                     
                   </tr>
                   </thead>

@@ -24,18 +24,17 @@ header p
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color:#000000;
 }
-
-/* Navigation Bar */
 nav {
+  margin-top:-27rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 15px 20px;
-  width:70%;
-  margin-left:15%;
-  margin-top:-25%;
-  background-color: rgb(255, 0, 0);
+  width: 100%;
+  position: fixed;
+  
+  background-color: rgb(223,56,2);
+  z-index: 1;
 }
 
 .nav-links a {
@@ -43,25 +42,23 @@ nav {
   text-decoration: none;
   margin: 0 15px;
   font-size: 1.3rem;
-  z-index:-1;
-
 }
 
-.nav-links a:hover
-{
-  color:rgb(194, 192, 192);
+.nav-links a:hover {
+  color: rgb(194, 192, 192);
   text-decoration: underline;
 }
 
 .nav-search input {
   padding: 5px;
   border-radius: 5px;
+  margin-right: 50px;
   border: none;
   outline: none;
-  width:20rem;
+  width: 15rem;
 }
-
 .hero {
+  margin-top:-23rem;
   height: 300px;
   display: flex;
   align-items: center;
@@ -86,13 +83,10 @@ nav {
   font-size:35px;
   
 }
-#welcome
-{
-  font-size:50px;
-}
 .sky
 {
-  z-index:-2;
+  display: flex;
+  z-index:-1;
 }
 .video-button
 {
@@ -137,7 +131,7 @@ h2
   padding: 20px;
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
-  background-color:rgb(255, 116, 41);
+  background-color:rgb(223,56,2);
 }
 
 .table {
