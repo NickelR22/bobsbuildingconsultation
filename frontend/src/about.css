@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.hero {
+    padding: 100px 20px;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 1.2rem;
+    color: gray;
+    max-width: 600px;
+    margin: 20px auto;
+}
+.image-showcase {
+    position: relative;
+    height: 80vh;
+    background: url('https://as1.ftcdn.net/jpg/00/34/91/44/1000_F_34914444_PnQzmoWcFNchM2Kj7Bqy0hqR9dcmYHQo.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-showcase h2 {
+    font-size: 2.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.spinning-tree {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.spinning-tree img {
+    width: 200px;
+    transition: transform 0.1s linear;
+}
+.values {
+    padding: 50px 20px;
+}
+.values h2 {
+    font-size: 2rem;
+}
+.values-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.value-box {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+.footer {
+    padding: 20px;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 116, 41);
+  }
