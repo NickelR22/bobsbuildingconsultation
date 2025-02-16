@@ -21,6 +21,7 @@ function App() {
             <div class="nav-links">
               <a href="./App.js">
                 <button class="btn">HOME</button></a>
+                
               <a href="./museum.html">
                 <button class="btn">INTERACTIVE MUSEUM</button></a>
               <a href="./about.html">
