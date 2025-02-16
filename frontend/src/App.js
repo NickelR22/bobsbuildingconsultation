@@ -28,14 +28,11 @@ function App() {
           </div>
         </nav>
         <img className="sky" src="assets/sky.png" width="100%" height="auto" alt="background sky image" />
-          <header>
-              <div className="hero">
-                  <h1>Simba's Surveillance</h1>  
+        <header>
+              <div className="glow">
+                  <h1>Simba's Surveillance</h1>
               </div>
-              
-              <p><i>Prowl for poachers!</i></p>
-          </header>
-          
+        </header>
           
           <article id="table">
           <img className="simbasmile" src="assets/simbasmile.png" width="10%" height="auto" alt="Simba the cub smiling" />
