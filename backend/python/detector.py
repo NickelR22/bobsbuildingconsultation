@@ -20,6 +20,9 @@ STATIC_FOLDER = "static"
 if not os.path.exists(STATIC_FOLDER):
     os.makedirs(STATIC_FOLDER)
 
+last_screenshot_time = 0  # Track last screenshot time
+COOLDOWN_TIME = 10  # Cooldown in seconds
+
 while True:
     ret, frame = cap.read()
     if not ret:
@@ -34,8 +37,9 @@ while True:
 
     # Filter detections based on confidence
     boxes = [(x, y, x + w, y + h) for (x, y, w, h), weight in zip(boxes, weights) if weight > CONFIDENCE_THRESHOLD]
-
-    if boxes:  # If a person is detected with high confidence
+    current_time = time.time()
+    if boxes and (current_time - last_screenshot_time > COOLDOWN_TIME):
+        last_screenshot_time = current_time  # Update last screenshot time
         timestamp = time.strftime("%Y%m%d-%H%M%S")
         screenshot_path = f"screenshot_{timestamp}.jpg"
 
@@ -51,8 +55,6 @@ while True:
                 print("Screenshot uploaded successfully!")
             else:
                 print("Failed to upload screenshot:", response.text)
-        print("sleeping")
-        time.sleep(100)  # Avoid taking screenshots too frequently
 
     for (xA, yA, xB, yB) in boxes:
         cv2.rectangle(frame, (xA, yA), (xB, yB), (0, 255, 0), 2)
