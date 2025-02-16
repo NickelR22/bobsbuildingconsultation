@@ -56,13 +56,13 @@ function App() {
         </div>
         </nav>
         <img className="sky" src="assets/sky.png" width="100%" height="auto" alt="background sky image" />
-          
         <header>
               <div className="glow">
                   <h1>Simba's Surveillance</h1>
               </div>
 
           </header>
+
           <img className="simbasmile" src="assets/simbasmile.png" width="10%" height="auto" alt="Simba the cub smiling" />
           <article id="table">
           
