@@ -19,27 +19,59 @@ function App() {
                   <input type="text" placeholder="Search..." />
               </div>
           </nav>
+
           <header>
               <div className="hero">
                   <h1>Simba's Surveillance</h1>
+                  
               </div>
+              <p><i>Prowl for poachers!</i></p>
           </header>
-          <article id="test-it">
-              <img className="sky" src="assets/simbasmile.png" width="10%" height="auto" alt="Simba the cub smiling" />
-              <p>
-                  Track The Savanna Wildlife Camera's Live Video Below
+          
+          
+          <article id="table">
+          <img className="simbasmile" src="assets/simbasmile.png" width="10%" height="auto" alt="Simba the cub smiling" />
+                <p>
+                  Track The Savanna Wildlife Camera's Live Alerts Below
               </p>
-          </article>
-          <img src="/assets/line.png" width="10%" height="auto" alt="little line for separation" />
+            <section className="table">
+              <table>
+                  <tr>
+                    <th>Time</th>
+                    <th>Link</th>
+                    
+                  </tr>
+                  <tr>
+                    <td>01:24</td>
+                    <td><a href="#">Link 1</a></td>
+                    
+                  </tr>
+                  <tr>
+                    <td>02:21</td>
+                    <td><a href="#">Link 2</a></td>
+                    
+                  </tr>
+                </table>
+              
+              </section>
+              </article>
+              <img src="/assets/line.png" width="10%" height="auto" alt="A little line for separation" />
           <section className="about">
               <h2>What we do</h2>
               <p>
                   At Simba's Surveillance, we are dedicated to protecting wildlife from the growing threat of poaching.
-                  Using state-of-the-art technology, our advanced camera systems provide live footage from the African Savanna, 
+
+                  
+              </p>
+              <p>
+                Using state-of-the-art technology, our advanced camera systems provide live footage from the African Savanna,
                   allowing us to detect trespassing poachers in real time. The moment suspicious activity is identified, park rangers 
                   are alerted, enabling rapid response to safeguard endangered species and preserve natural ecosystems.
               </p>
           </section>
+          <footer class="footer">
+            &copy; <script src="about.js"></script> Simba's Surveillance. All rights reserved.
+        </footer>
       </div>
   );
 }
