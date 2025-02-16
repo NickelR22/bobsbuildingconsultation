@@ -30,6 +30,10 @@ nav {
     margin: 0 15px;
     font-size: 1.3rem;
 }
+.nav-links button
+{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 .nav-links a:hover {
     color: rgb(194, 192, 192);
