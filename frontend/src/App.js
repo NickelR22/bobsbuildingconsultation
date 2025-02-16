@@ -20,9 +20,13 @@ function App() {
           
           <nav>
           <div class="nav-links">
-              <a href="./App.js">HOME</a>
-              <a href="#">CONTACTS</a>
-              <a href="./about.html">ABOUT</a>
+              <a href="./App.js">
+                <button class="btn">HOME</button></a>
+
+              <a href="#">
+                <button class="btn">CONTACTS</button></a>
+              <a href="./about.html">
+              <button class="btn">ABOUT</button></a>
           </div>
           <div class="nav-search">
               <input type="text" placeholder="Search..." />
