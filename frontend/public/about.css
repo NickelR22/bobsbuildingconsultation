@@ -27,10 +27,7 @@ body {
     justify-content: center;
 }
 .image-showcase h2 {
-    font-size: 2.5rem;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 5px;
+    font-size: 10rem;
 }
 .spinning-tree {
     display: flex;

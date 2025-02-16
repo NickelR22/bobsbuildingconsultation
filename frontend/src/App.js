@@ -13,7 +13,7 @@ function App() {
               <div className="nav-links">
                   <a href="#">HOME</a>
                   <a href="#">CONTACTS</a>
-                  <a href="/frontend/src/about.html">ABOUT</a>
+                  <a href="./about.html">ABOUT</a>
               </div>
               <div className="nav-search">
                   <input type="text" placeholder="Search..." />
